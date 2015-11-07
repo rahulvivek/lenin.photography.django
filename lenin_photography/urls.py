@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^$',
         OnlineAppView.as_view(),
         name='online_app_view'),
+    url(r'^api/v1/', include('photos.api_urls')),
 ]
