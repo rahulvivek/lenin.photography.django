@@ -1,6 +1,7 @@
-
-*.pot
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
 *.pyc
-__pycache__/
-local_settings.py
 
