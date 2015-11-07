@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from .views import OnlineAppView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$',
+        OnlineAppView.as_view(),
+        name='online_app_view'),
 ]
